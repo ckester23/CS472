@@ -1,6 +1,9 @@
 # CS472 Final Project - Identifying Ink on Ancient Papyrus Texts
 Cheyanne Kester, Seth Palmer, and Maddie Porcaro
 
+### Download campfire.zip 
+http://dl.ash2txt.org/campfire.zip 
+
 
 ## The Problem
 Pompeii and nearby Herculaneum were devastated by the eruption of Mount Vesuvius in AD 79, which caused hundreds of ancient scrolls in the library of a grand luxury villa to be carbonized by the intense blast of hot gas, rendering them completely unreadable. However, researchers are now embarking on a worldwide competition to decipher the charred papyri, following a successful demonstration that an artificial intelligence program can extract letters and symbols from high-resolution X-ray images of the delicate, unrolled documents.
