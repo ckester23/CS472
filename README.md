@@ -1,4 +1,4 @@
-# CS472 Final Project - Identifying INk on Ancient Papyrus Texts
+# CS472 Final Project - Identifying Ink on Ancient Papyrus Texts
 Cheyanne Kester, Seth Palmer, and Maddie Porcaro
 
 
