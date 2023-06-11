@@ -21,22 +21,18 @@ To jumpstart our work, the competition provided some starter code to help new co
 Development took place primarily on Google Colab due to its versatility and it’s storage capacity, as the data we needed to use was too large to hold on any of the machines at our disposal. 
 
 ## IV.  Experiments	
-Our experiments mostly consisted of fine-tuning the hyperparameters needed for our neural network, specifically the dropout rate, learning rate, kernel initializer, and loss function parameters. The specific process and trials of finding the ideal state of these hyperparameters are as follows:
+Our experiments mostly consisted of fine-tuning the hyperparameters needed for our neural network, specifically the dropout rate, learning rate, kernel initializer, and loss function parameters.
 
 ### i. Dropout Rate
-Fine-tuning the dropout rate for the model was a fairly straightforward task, as we only had to adjust a single decimal to be between .2 and .8. For the best results, we used a dropout rate of .2. While not the most significant of hyperparameters for accuracy, the dropout rate was crucial for limiting the overfitting of the model. The experiment results used to find this are below.
-ii. Learning Rate
-Like the dropout rate, fine-tuning the learning rate for the model was streamlined, as we only had to adjust a single decimal to be between .01 and .0001. For the best results, we used 0.001. The experiment results are below.
+Fine-tuning the dropout rate for the model was a fairly straightforward task, as we only had to adjust a single decimal to be between .2 and .8. For the best results, we used a dropout rate of .2. While not the most significant of hyperparameters for accuracy, the dropout rate was crucial for limiting the overfitting of the model. 
+### ii. Learning Rate
+Like the dropout rate, fine-tuning the learning rate for the model was streamlined, as we only had to adjust a single decimal to be between .01 and .0001. For the best results, we used 0.001.
 
 ### iii. Kernel Initializer
 In any neural network, initializing weights is crucial to the model’s validation loss. There were four potential initializers that could be used, Glorot Normal, Glorot Uniform, HE Normal, and HE Uniform, though we found that Glorot Normal was the best.
 
-
 ### iv. Loss Function & Parameters
 Through extensive experimentation, the one parameter that has had the biggest influence on our model is the loss function used. Our experimenting has incorporated 4 different loss functions including, binary cross-entropy, binary focal cross-entropy, Tversky loss, and Log Cosh Dice loss. We chose these functions because going through models that could solve our problem we also came across common loss functions and these four came up most frequently (excluding binary intersection over union loss). So along with trying these different functions our tuning algorithm also searched through their appropriate parameters (if they had any we were interested in tuning). Three of our loss functions had parameters to tune while the binary cross entropy didn’t have any significant ones to tune. Our tuner discovered that the binary cross entropy had the best performance in terms of validation accuracy and validation loss. However, it’s worth mentioning that, when tuned for the Tversky loss function, the predictive output gave more definitive output which could lead to a better loss function given a more suited model to accompany it.
-
-The results of each experiment are represented by this graph:
-
 
 ## V. Interpretations of Results
 Based on the results of our experiments, our team interprets our solution to have a generally positive impact, with a few caveats. Due to time constraints, we were not able to eliminate the possibility of overfitting in our model, so if this solution were to be continued by other developers or by members of this team, it would require further fine-tuning to reduce this possibility. Additionally, whilst our final validation accuracy was quite promising, and well above our goal, it would need to be much higher, preferably in the 90% range, to be used in any professional setting. This preferred accuracy could be attained in part with further hyperparameter tuning, we would even recommend restarting the finetuning process to be completely sure of the correct values. However, we realize that our architecture itself might not be perfectly structured to fit this problem, and would need restructuring to attain higher accuracy readings. 
